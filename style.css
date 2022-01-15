@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: rgb(107, 72, 202);
+    padding:0;
     color: cornsilk;
 }
 .nav{
@@ -73,14 +73,13 @@ background-image: url("https://media.istockphoto.com/vectors/handwritten-typogra
 margin-top: -20px;
 }
 
-.categories{
+#categories{
     width: 100%;
-    height: 90vh;
+    padding-top: 10px;
+    height: 100%;
 background-color: rgba(240, 255, 255, 0.774);
-margin-top: -30px;
 }
 .head{
-    margin-top: 35px;
     font-size: 42px;
     color: rgb(107, 72, 202);
     text-align: center;
@@ -88,11 +87,12 @@ margin-top: -30px;
 }
 
 #slider{
-    width:80%;
+    width:60%;
     margin:0 auto;
     position:relative;
     overflow:hidden;
-    box-shadow:2px 5px 10px rgba(0,0,0,0.4);;
+    box-shadow:2px 5px 10px rgba(0,0,0,0.4);
+    margin-bottom: 30px;
   }
   
   .slide{
