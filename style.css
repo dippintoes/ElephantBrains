@@ -8,6 +8,8 @@ body{
     width: 100%;
     height: 7vh;
     position: sticky;
+    z-index: 4;
+
   top: 0;
 }
 .nav-items,.nav1-items{

@@ -45,22 +45,22 @@
             <div id="slider">  
                 <div class="slide" style="background:dodgerBlue;">
                 <img src="https://previews.123rf.com/images/sumkinn/sumkinn1511/sumkinn151100036/47783764-quiz-background-the-concept-is-the-question-with-the-answer-vector-.jpg" height="450px" width="500px">
-                <h2 class="subheading"><a href="Academic.html">Academic</a></h2>
+                <h2 class="subheading"><a id="acad" href="staging.html">Academic</a></h2>
                 </div>
                 
                 <div class="slide" style="background:coral;">
                 <img src="http://www.themanthanschool.co.in/blog/wp-content/uploads/2019/12/general-knowledge.jpg" height="450px" width="500px">
-                <h2 class="subheading"><a href="GK.html">General Knowledge</a></h2>
+                <h2 class="subheading"><a id="gk" href="staging.html">General Knowledge</a></h2>
                 </div>
             
                 <div class="slide" style="background:crimson;">
                 <img src=" https://is1-ssl.mzstatic.com/image/thumb/Purple/v4/c7/41/e8/c741e80a-1cc1-377a-e3d6-e8063aa0d7b7/source/512x512bb.jpg" height="450px" width="500px">
-                <h2 class="subheading"><a href="Bolly.html">Bolly Quiz</a></h2>
+                <h2 class="subheading"><a id="bolly" href="staging.html">Bolly Quiz</a></h2>
                 </div>
                 
                 <div class="slide" style="background: #6edf10;">
                 <img src="https://1.bp.blogspot.com/-qKzqBlxDa8U/YG33phsPJxI/AAAAAAAAEAI/jauqXwwmLh8fPnmZkxbroGwwE76n5-m3wCLcBGAsYHQ/s1277/literature%2Bquiz.PNG"  height="450px" width="500px">
-                <h2 class="subheading"><a href="Lit.html">Literature Quiz</a></h2>
+                <h2 class="subheading"><a id="lit" href="staging.html">Literature Quiz</a></h2>
                 </div>
                 
                 <!--Controlling arrows-->
@@ -172,6 +172,20 @@
                 slides[index].style.display = "block";
                 dots[index].classList.add("active");
             }
+
+            document.getElementById("acad").addEventListener("click", function() {
+              sessionStorage.setItem('category','18');
+            });
+
+            document.getElementById("gk").addEventListener("click", function() {
+              sessionStorage.setItem('category','9');
+            });
+            document.getElementById("bolly").addEventListener("click", function() {
+              sessionStorage.setItem('category','11');
+            });
+            document.getElementById("lit").addEventListener("click", function() {
+              sessionStorage.setItem('category','20');
+            });
         </script>
 
 </body>
