@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding:0;
+    color: cornsilk;
+}
+
+/* test window*/
+.testwindow{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+
+}
+
+
+.container1{
+  margin-top: 100px;
+  margin-left: 150px;
+  align-self: center;
+  background-color: blanchedalmond;
+  width: 80vw;
+  height: 100%;
+  color: black;
+  box-shadow: 0 0.4rem 1.4rem 0 black;
+  margin-bottom: 100px;
+}
+.game{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 90%;
+}
+.hidden{
+  display: none;
+}
+#topbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.topscore{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.topscoreval{
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 1.4rem;
+  border: 0.3rem solid #56a5eb;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 1.4rem;
+  background-color: #56a5eb;
+  width: 0%;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 80%;
+  font-size: 1.0rem;
+  border: 0.1rem solid rgb(86, 165, 235, 0.25);
+  background-color: white;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 0.5rem 1.5rem;
+  background-color: #56a5eb;
+  color: white;
+}
+
+.choice-text {
+  padding: 0.5rem;
+  width: 80%;
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+  /* LOADER */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #56a5eb;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
