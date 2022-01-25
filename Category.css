@@ -1,0 +1,121 @@
+body{
+    background: #1111;
+    background-size: cover;
+  }
+
+  .head{
+    font-size: 64px;
+    color: rgb(107, 72, 202);
+    text-align: center;
+    font-weight: 400;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  .item1{
+    margin: 30px 30px;
+
+   justify-content: space-around;
+    align-content: center;
+    border-image-slice: 1;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+}
+  .pos1{
+    height: 350px;
+    width: 350px;
+    background-image: url(https://metro.co.uk/wp-content/uploads/2020/06/GettyImages-1194690281.jpg?quality=90&strip=all);
+    background-size: 350px;
+    background-position: center;
+    transition: .5s;
+}
+.pos2{
+    height: 350px;
+    width: 350px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4EzCu0GNZzBFH3b75SZ4jGsRdL0NzrE9Srg&usqp=CAU);
+    background-size: 350px;
+    background-position: center;
+    transition: .5s;
+}
+.pos3{
+    height: 350px;
+    width: 350px;
+    background-image: url(https://cdn.images.express.co.uk/img/dynamic/4/590x/secondary/Sports-quiz-questions-test-2500465.jpg?r=1591944457948);
+    background-size: 350px;
+    background-position: center;
+    transition: .5s;
+}
+.pos4{
+    height: 350px;
+    width: 350px;
+    background-image: url(https://uploads-ssl.webflow.com/5ec7215b6223b925551a0ce0/5f149ec498a06f6ab9f207ce_music-games-on-alexa.jpg);
+    background-size: 350px;
+    background-position: center;
+    transition: .5s;
+}
+.pos5{
+    height: 350px;
+    width: 350px;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/71c9TVp9T+L.png);
+    background-size: 350px;
+    background-position: center;
+    transition: .5s;
+}
+.pos6{
+    height: 350px;
+    width: 350px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTF_lBWNKE6szE5hC0iH5myeBw4ZK8_XiHoQ&usqp=CAU);
+    background-size: 350px;
+    background-position: center;
+    transition: .5s;
+}
+
+.card1{
+   margin: 40px;
+    width: 350px;
+    background:linear-gradient(150deg,#f17501,#f1e2b1);
+    display: grid;
+    justify-content: center;
+    height: 500px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: .5s;
+}
+.card1>img{
+     width: 350px;
+}
+.abv{
+    margin-top: 40%;
+    padding: 30px;
+    font-size: 25px;
+    font-family: nyala;
+    font-weight: bolder;
+    color: #442b41;
+    background: rgba(255,255,255,.5);
+
+}
+.card1>h6{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkslategray;
+}
+.pos1:hover,
+.pos2:hover,
+.pos3:hover,
+.pos4:hover,
+.pos5:hover,
+.pos6:hover
+{
+    background-size: 400px;
+}
+{
+    background-size: 400px;
+}
+
+@media(max-width: 720px){
+  .item{
+    grid-template-columns: auto;
+  }
+}
