@@ -15,10 +15,10 @@
                 <ul>
                 <div class="item"><a href="#home">Home</a></div>
                 <div class="item"><a href="Category.html">Category</a></div>
-                <div class="item"><a>Explore</a></div>
                 <div class="item"><a>Search</a></div>
-                <div class="item"><a>Contact us</a></div>
-                
+                <div class="item"><a href="contact.html">Contact us</a></div>
+                <div class="item"><a href="about.html">About Us</a></div>
+                <div class="item"><a href="login.html"><i class="fa fa-sign-in"></i></a></div>               
                 </ul>
             </div>
         </section>
@@ -73,6 +73,22 @@
                 <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
                 </div>
                 
+        </section>
+
+        <section class="registerhere">
+          <form id="form1">
+            <div class="mobilesize">         
+                 <div class="toptitale">
+                     <label for="SingIn">Sign yourself up</label>
+                 </div>
+                     <span class="pointtop"></span>
+                <div class="SingInBox">
+                    <h3>Get yourself registered to dip your toes in the world of random questions  </h3>
+                     <button id="btn" ><a href="login.html"><span class="si">Register now</span></a></button>
+                </div>
+            </div>
+         </form>
+         
         </section>
         <footer>
             <!-- Footer main -->
@@ -173,6 +189,7 @@
                 dots[index].classList.add("active");
             }
 
+      
             document.getElementById("acad").addEventListener("click", function() {
               sessionStorage.setItem('category','18');
             });

@@ -75,6 +75,8 @@ background-image: url("https://media.istockphoto.com/vectors/handwritten-typogra
 margin-top: -20px;
 }
 
+
+
 #categories{
     width: 100%;
     padding-top: 10px;
@@ -176,6 +178,107 @@ background-color: rgba(240, 255, 255, 0.774);
     }
   }
 
+  .login-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .registerhere{
+    background-image: url(https://www.planetbuddies.com/media/wysiwyg/PLANET-BUDDIES/Penguin.gif);
+    height: 50vh;
+    padding-top: 70px;
+  }
+  #form1{
+    margin-left: 500px;
+    width: 560px;
+     }
+  .mobilesize{
+    color: black;
+    width: 100%;
+    min-height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding:  50px;
+  }
+  .SingInBox{
+    width: 600px;
+    position: absolute;
+  }
+  .registerhere h3{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 32px;
+  }
+  #btn a:hover{
+    text-decoration: none;
+  }
+  #btn{
+    margin-left: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 14pt;
+  }
+  .toptitale{
+    font-size: 34pt;
+    color: darkgreen;
+    margin-top: -30px;
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 0px;
+    font-weight: 500;
+    line-height: 2;
+  }
+  .toptitale label{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 0px;
+    user-select: none;
+  }
+  .pointtop{
+    display: none;
+    width: 0px;
+    height: 0px;
+    border-bottom: 25px solid #fff;
+    border-left: 20px solid transparent; 
+    border-right: 20px solid transparent;
+    margin-left: 50px;
+  }
+  
+  .toptitale label[for="SignUp"]:hover, {
+    text-shadow: inside 0px 3px 8px #333;
+    color: #fff
+  }
+
+  #SingIn:checked ~ .pointtop {
+    display: block;
+    position: absolute;
+    left: 80px;
+    top: 45px;
+    animation: point1 0.5s;
+  }
+ 
+  @keyframes point1{
+    0%{top: 55px; opacity: 0}
+    75%{opacity: 0}
+    100%{left: 80px; opacity: 1}
+  }
+  
+  
+  @keyframes show1{
+    0%{ opacity: 0; margin-top: 25px;}
+    50%{ opacity: 0.5}
+    100%{opacity: 1}
+  }
+  
+  
 
   ul {
     list-style: none;
