@@ -1,3 +1,16 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +23,25 @@
 
 </head>
 <body>
+  <div class="content">
+  	<!-- notification message -->
+  	<?php if (isset($_SESSION['success'])) : ?>
+      <div class="error success" >
+      	<h3>
+          <?php 
+          	echo $_SESSION['success']; 
+          	unset($_SESSION['success']);
+          ?>
+      	</h3>
+      </div>
+  	<?php endif ?>
+
+    <!-- logged in user information -->
+    <?php  if (isset($_SESSION['username'])) : ?>
+    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+    	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+    <?php endif ?>
+</div>
         <section class="nav">
             <div class="nav-items"> 
                 <ul>
@@ -18,7 +50,7 @@
                 <div class="item"><a>Search</a></div>
                 <div class="item"><a href="contact.html">Contact us</a></div>
                 <div class="item"><a href="about.html">About Us</a></div>
-                <div class="item"><a href="login.html"><i class="fa fa-sign-in"></i></a></div>               
+                <div class="item"><a href="register.php"><i class="fa fa-sign-in"></i></a></div>               
                 </ul>
             </div>
         </section>
@@ -84,7 +116,7 @@
                      <span class="pointtop"></span>
                 <div class="SingInBox">
                     <h3>Get yourself registered to dip your toes in the world of random questions  </h3>
-                     <button id="btn" ><a href="login.html"><span class="si">Register now</span></a></button>
+                     <button id="btn" ><a href="register.php"><span class="si">Register now</span></a></button>
                 </div>
             </div>
          </form>
