@@ -214,9 +214,10 @@ background-color: rgba(240, 255, 255, 0.774);
     text-decoration: none;
   }
   #btn{
-    margin-left: 10px;
+    margin-left: 100px;
     padding: 10px;
     margin-top: 10px;
+    text-align: center;
     width: 100%;
     cursor: pointer;
     background-color: black;
@@ -225,6 +226,7 @@ background-color: rgba(240, 255, 255, 0.774);
     border: none;
     font-size: 14pt;
   }
+  
   .toptitale{
     font-size: 34pt;
     color: darkgreen;

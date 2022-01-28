@@ -5,20 +5,17 @@ const mostRecentScore = localStorage.getItem('mostRecentScore');
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
-const MAX_HIGH_SCORES = 5;
+const MAX_HIGH_SCORES = 100;
 
 finalScore.innerText = mostRecentScore;
 
-username.addEventListener('keyup', () => {
-    saveScoreBtn.disabled = !username.value;
-});
 
 saveHighScore = (e) => {
     e.preventDefault();
 
     const score = {
         score: mostRecentScore,
-        name: username.value,
+        email:  $_SESSION['email'],
     };
     highScores.push(score);
     highScores.sort((a, b) => b.score - a.score);

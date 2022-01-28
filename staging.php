@@ -1,3 +1,11 @@
+<?php 
+
+session_start();
+
+if(!isset($_SESSION['email'])){
+    die(header("location: 404.php"));
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <link>
@@ -14,12 +22,11 @@
     <section class="nav">
         <div class="nav-items"> 
             <ul>
-                <div class="item"><a href="#home">Home</a></div>
-                <div class="item"><a href="Category.html">Category</a></div>
-                <div class="item"><a>Search</a></div>
-                <div class="item"><a href="contact.html">Contact us</a></div>
-                <div class="item"><a href="about.html">About Us</a></div>
-                <div class="item"><a href="login.html"><i class="fa fa-sign-in"></i></a></div>               
+              <div class="item"><a href="index.php">Home</a></div>
+              <div class="item"><a href="Category.html">Category</a></div>
+              <div class="item"><a>Search</a></div>
+              <div class="item"><a href="contact.html">Contact us</a></div>
+              <div class="item"><a href="about.html">About Us</a></div>              
             </ul>
         </div>
     </section>

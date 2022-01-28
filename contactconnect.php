@@ -12,7 +12,7 @@ die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 else{
 
-    echo "<script type='text/javascript'>alert('submitted successfully!!'); window.location.href = 'http://techtrivia.localhost:81/Index.html';</script>";
+    echo "<script type='text/javascript'>alert('submitted successfully!!'); window.location.href = 'http://techtrivia.localhost:81/index.php';</script>";
 
         $name=$_POST["name"];
         $email=$_POST["email"];

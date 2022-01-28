@@ -1,14 +1,10 @@
 <?php 
   session_start(); 
 
-  if (!isset($_SESSION['username'])) {
-  	$_SESSION['msg'] = "You must log in first";
-  	header('location: login.php');
-  }
   if (isset($_GET['logout'])) {
   	session_destroy();
-  	unset($_SESSION['username']);
-  	header("location: login.php");
+  	unset($_SESSION['email']);
+  	header("location: end.php");
   }
 ?>
 <!DOCTYPE html>
@@ -23,25 +19,6 @@
 
 </head>
 <body>
-  <div class="content">
-  	<!-- notification message -->
-  	<?php if (isset($_SESSION['success'])) : ?>
-      <div class="error success" >
-      	<h3>
-          <?php 
-          	echo $_SESSION['success']; 
-          	unset($_SESSION['success']);
-          ?>
-      	</h3>
-      </div>
-  	<?php endif ?>
-
-    <!-- logged in user information -->
-    <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
-    <?php endif ?>
-</div>
         <section class="nav">
             <div class="nav-items"> 
                 <ul>
@@ -49,8 +26,13 @@
                 <div class="item"><a href="Category.html">Category</a></div>
                 <div class="item"><a>Search</a></div>
                 <div class="item"><a href="contact.html">Contact us</a></div>
-                <div class="item"><a href="about.html">About Us</a></div>
-                <div class="item"><a href="register.php"><i class="fa fa-sign-in"></i></a></div>               
+                <div class="item"><a href="about.html">About Us</a></div> 
+                <?php  if (isset($_SESSION['email'])) : ?>
+    	<div class="item"><br><a href="index.php?logout='1'" style="color: red;">logout</a></div>
+    <?php endif ?>
+    <?php  if (!isset($_SESSION['email'])) : ?>
+    	<div class="item"><a href="register.php"><i class="fa fa-sign-in"></i></a></div>
+    <?php endif ?>             
                 </ul>
             </div>
         </section>
@@ -77,22 +59,22 @@
             <div id="slider">  
                 <div class="slide" style="background:dodgerBlue;">
                 <img src="https://previews.123rf.com/images/sumkinn/sumkinn1511/sumkinn151100036/47783764-quiz-background-the-concept-is-the-question-with-the-answer-vector-.jpg" height="450px" width="500px">
-                <h2 class="subheading"><a id="acad" href="staging.html">Academic</a></h2>
+                <h2 class="subheading"><a id="acad" href="staging.php">Academic</a></h2>
                 </div>
                 
                 <div class="slide" style="background:coral;">
                 <img src="http://www.themanthanschool.co.in/blog/wp-content/uploads/2019/12/general-knowledge.jpg" height="450px" width="500px">
-                <h2 class="subheading"><a id="gk" href="staging.html">General Knowledge</a></h2>
+                <h2 class="subheading"><a id="gk" href="staging.php">General Knowledge</a></h2>
                 </div>
             
                 <div class="slide" style="background:crimson;">
                 <img src=" https://is1-ssl.mzstatic.com/image/thumb/Purple/v4/c7/41/e8/c741e80a-1cc1-377a-e3d6-e8063aa0d7b7/source/512x512bb.jpg" height="450px" width="500px">
-                <h2 class="subheading"><a id="bolly" href="staging.html">Bolly Quiz</a></h2>
+                <h2 class="subheading"><a id="bolly" href="staging.php">Bolly Quiz</a></h2>
                 </div>
                 
                 <div class="slide" style="background: #6edf10;">
                 <img src="https://1.bp.blogspot.com/-qKzqBlxDa8U/YG33phsPJxI/AAAAAAAAEAI/jauqXwwmLh8fPnmZkxbroGwwE76n5-m3wCLcBGAsYHQ/s1277/literature%2Bquiz.PNG"  height="450px" width="500px">
-                <h2 class="subheading"><a id="lit" href="staging.html">Literature Quiz</a></h2>
+                <h2 class="subheading"><a id="lit" href="staging.php">Literature Quiz</a></h2>
                 </div>
                 
                 <!--Controlling arrows-->
@@ -107,21 +89,22 @@
                 
         </section>
 
-        <section class="registerhere">
-          <form id="form1">
-            <div class="mobilesize">         
-                 <div class="toptitale">
-                     <label for="SingIn">Sign yourself up</label>
-                 </div>
-                     <span class="pointtop"></span>
-                <div class="SingInBox">
-                    <h3>Get yourself registered to dip your toes in the world of random questions  </h3>
-                     <button id="btn" ><a href="register.php"><span class="si">Register now</span></a></button>
-                </div>
-            </div>
-         </form>
-         
-        </section>
+        <?php  if (!isset($_SESSION['email'])) : ?>
+          <section class="registerhere">
+            <form id="form1">
+              <div class="mobilesize">         
+                  <div class="toptitale">
+                      <label for="SingIn">Sign yourself up</label>
+                  </div>
+                      <span class="pointtop"></span>
+                  <div class="SingInBox">
+                      <h3>Get yourself registered to dip your toes in the world of random questions  </h3>
+                      <a id="btn" href="register.php">Register now</a>
+                  </div>
+              </div>
+          </form>
+          </section>
+        <?php endif ?> 
         <footer>
             <!-- Footer main -->
             <section class="ft-main">
