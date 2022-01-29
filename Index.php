@@ -14,6 +14,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech trivia</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-right:70px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+      </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -27,7 +76,18 @@
                 <div class="item"><a href="contact.html">Contact us</a></div>
                 <div class="item"><a href="about.html">About Us</a></div> 
                 <?php  if (isset($_SESSION['email'])) : ?>
-    	<div class="item"><br><a href="index.php?logout='1'" style="color: red;">logout</a></div>
+                  <div class="item">
+                    <div class="dropdown"  style="float:right;">
+                      <button class="dropbtn"><i class="fa fa-user"></i> 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                      <a href="history.html"><i class="fa fa-history"></i>History</a>
+                      <a href="highscores.html"><i class="fa fa-fighter-jet"></i>Leaderboard</a>
+                      <a href="index.php?logout='1'"><i class="fa fa-user"></i>Logout</a>
+                      </div>
+                    </div> 
+                </div>
     <?php endif ?>
     <?php  if (!isset($_SESSION['email'])) : ?>
     	<div class="item"><a href="register.php"><i class="fa fa-sign-in"></i></a></div>

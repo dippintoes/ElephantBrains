@@ -9,7 +9,6 @@ body{
     height: 7vh;
     position: sticky;
     z-index: 4;
-
   top: 0;
 }
 .nav-items,.nav1-items{
@@ -18,6 +17,7 @@ body{
     font-weight: 700;
     float:right ;
     gap: 100px;
+    margin-bottom: 10px;
 }
 
 .item{
@@ -380,13 +380,13 @@ background-color: rgba(240, 255, 255, 0.774);
   }
 
 ::-webkit-scrollbar {
-    width: 16px;
+    width: 8px;
   }
   ::-webkit-scrollbar-track {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	animation: gradient 15s ease infinite;
     border-radius: 100vw;
-    margin-block: 10px;
+    margin-block: 7px;
   }
   ::-webkit-scrollbar-thumb {
     background-color: rgb(107, 72, 202);
