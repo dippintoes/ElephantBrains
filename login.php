@@ -20,9 +20,11 @@ $password = trim($_POST['password_1']);
             
                 $_SESSION['email'] = $email;
                 $_SESSION['user_logged_in'] = true;
+                echo "<script>alert('Logged in successfully!!');</script>";
+
             header('Location: index.php');
         }else{
-            echo "Invalid email and password";
+            echo "<script>alert('Invalid email and password');</script>";
         }
 
     }

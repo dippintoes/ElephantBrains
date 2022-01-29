@@ -6,6 +6,7 @@ if(!isset($_SESSION['email'])){
     die(header("location: 404.php"));
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,7 +34,7 @@ if(!isset($_SESSION['email'])){
     <div class="container">
       <div id="end" class="flex-center flex-column">
         <h1 id="finalScore"></h1>
-        <h2><?php  echo "email:", $_SESSION['email'] ?></h2>
+        <h2 id="email"><?php  echo $_SESSION['email'] ?></h2>
 
         <form>
           <button
@@ -54,10 +55,10 @@ const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
 const LatestScore = localStorage.getItem('LatestScore');
 const useremail='<?php echo $_SESSION['email'] ?>';
+sessionStorage.setItem("email",useremail);
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 const indiscores = JSON.parse(localStorage.getItem('IndivividualScores')) || [];
 const MAX_HIGH_SCORES = 100;
-
 finalScore.innerText = LatestScore;
 
 
