@@ -82,7 +82,6 @@
                         <i class="fa fa-caret-down"></i>
                       </button>
                       <div class="dropdown-content">
-                      <a href="history.html"><i class="fa fa-history"></i>History</a>
                       <a href="highscores.html"><i class="fa fa-fighter-jet"></i>Leaderboard</a>
                       <a href="index.php?logout='1'"><i class="fa fa-user"></i>Logout</a>
                       </div>
