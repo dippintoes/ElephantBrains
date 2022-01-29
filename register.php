@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>Registration form</title>
+	<link rel="stylesheet" type="text/css" href="style.css" ></link>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -12,19 +13,88 @@
 
 	<!-- Bootstrap JS -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	
+	<style>
+		.container{
+    width:80vw;
+    margin:100px;
+    height:90vh;
+}
+a{
+	color:white;
+	margin-top:20px;
+}
+#login{
+	color:black;
+}
+/* signup */
+#div_sign{
+    border: 1px solid gray;
+    border-radius: 3px;
+    width: 40vw;
+    height: 55vh;
+    box-shadow: 0px 2px 2px 0px  gray;
+    margin: 0 auto;
+}
+
+#div_sign h1{
+    margin-top: 0px;
+    font-weight: normal;
+    padding: 10px;
+	width:100%;
+    background-color: cornflowerblue;
+    color: white;
+    font-family: sans-serif;
+}
+.form-group{
+	width:50%;
+}
+#div_sign div{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#div_sign label{
+    width: 100%;
+    padding: 7px;
+}
+
+#div_sign input[type=submit]{
+	margin-left:150px;
+    width: 50%;
+    background-color: black;
+    border: 0px;
+	margin-bottom:100px;
+    color: white;
+}
+#div_sign input[type=submit]:hover{
+    background-color:cornflowerblue;
+    color:black;
+}
+
+/* media */
+@media screen and (max-width:720px){
+    .container{
+        width: 100%;
+    }
+    #div_sign{
+        width: 99%;
+    }
+}
+</style>
+	</style>
+
 
 	<?php 
 	$error_message = "";$success_message = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $con = mysqli_init(); 
-mysqli_real_connect($con, "triviaadmin.mysql.database.azure.com", "triviaadmin", "elephant@12345", "login", 3306);
+	mysqli_real_connect($con, "triviaadmin.mysql.database.azure.com", "triviaadmin", "elephant@12345", "login", 3306);
 
-if (mysqli_connect_errno($con)) {
-die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
-else{
+	if (mysqli_connect_errno($con)) {
+		die('Failed to connect to MySQL: '.mysqli_connect_error());
+	}
+	else{
 
 	// Register user
 		
@@ -86,16 +156,21 @@ else{
 	?>
 </head>
 <body>
+	<section class="nav">
+        <div class="nav-items"> 
+            <ul>
+            <div class="item"><a href="index.php">Home</a></div>
+            <div class="item"><a href="Category.html">Category</a></div>
+            <div class="item"><a>Search</a></div>
+            <div class="item"><a href="contact.html">Contact us</a></div>
+            <div class="item"><a href="about.html">About Us</a></div>            
+            </ul>
+        </div>
+    </section>
+
 	<div class='container'>
-		<div class='row'>
-			<div class='col-md-12'>
-				<h2></h2>
-			</div>
-
-			<div class='col-md-6' >
-					
+			<div id="div_sign">
 				<form method='post' action=''>
-
 					<h1>SignUp</h1>
 					<?php 
 					// Display Error message
@@ -108,7 +183,6 @@ else{
 					<?php
 					}
 					?>
-
 					<?php 
 					// Display Success message
 					if(!empty($success_message)){
@@ -139,16 +213,72 @@ else{
 					    <input type="password" class="form-control" name="password_2" id="password_2" required="required" maxlength="80">
 					</div>
 					
-					<button type="submit" name="btnsignup" class="btn btn-default">Submit</button>
+					<input type="submit" name="btnsignup"></input>
 				</form>
-
-				<p>
-  		Already a member? <a href="login.php">Sign in</a>
-  	</p>
-			</div>
-			
-			
-		</div>
+				<p>Already a member? <a id="login" href="login.php">Sign in</a></p>
+			</div>		
 	</div>
+
+	<footer>
+    <!-- Footer main -->
+    <section class="ft-main">
+      <div class="ft-main-item">
+        <h2 class="ft-title">Legal</h2>
+        <ul>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Interest based ads</a></li>
+          <li><a href="#">Do not sell my info</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Resources</h2>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">eBooks</a></li>
+          <li><a href="#">Webinars</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Contact</h2>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Sales</a></li>
+          <li><a href="#">Advertise</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Stay Updated</h2>
+        <p>Get free updates before others do!</p>
+        <form>
+          <input type="email" name="email" placeholder="Enter email address">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </section>
+  
+    <!-- Footer social -->
+    <section class="ft-social">
+      <ul class="ft-social-list">
+        <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+        <li><a href="#"><i class="fa fa-git-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+      </ul>
+    </section>
+  
+    <!-- Footer legal -->
+    <section class="ft-legal">
+      <ul class="ft-legal-list">
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li>&copy; 2021 by Elephant brains, Aurangabad</li>
+      </ul>
+    </section>
+  </footer>
 </body>
 </html>

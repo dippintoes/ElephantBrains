@@ -83,7 +83,7 @@ if(!isset($_SESSION['email'])){
                         <p><a href="#top" class="btn btn--accent">Read more</a></p>
                     </div>
                     <figure>
-                        <img src="https://static.wikia.nocookie.net/fairlyoddparents/images/1/1e/Da_Rules.png/revision/latest?cb=20180503070000&path-prefix=en" alt="Image description">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTweVhoHWcx_p_hRe6AyDUDOeH-OpW0fnIbgg&usqp=CAU">
                     </figure>
                 </div>
             </li>

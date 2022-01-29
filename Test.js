@@ -14,7 +14,7 @@ let availableQuestions=[];
 let questions=[];
 
 const category = sessionStorage.getItem('category');
-fetch(`https://opentdb.com/api.php?amount=10&category=${category}`)
+fetch(`https://opentdb.com/api.php?amount=10&category=${category}&difficulty=easy&type=multiple`)
 .then((res)=>{
     return res.json();
 })
@@ -28,7 +28,7 @@ fetch(`https://opentdb.com/api.php?amount=10&category=${category}`)
         formattedQUestion.answer=Math.floor(Math.random()*4)+1;
 
         answerChoices.splice(
-            formattedQUestion.answer-1,0,loadedQuestion.correct_answer
+            formattedQUestion.answer - 1,0,loadedQuestion.correct_answer
         );
 
         answerChoices.forEach((choice,index)=>{

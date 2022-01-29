@@ -33,14 +33,14 @@ if(!isset($_SESSION['email'])){
     <div class="container">
       <div id="end" class="flex-center flex-column">
         <h1 id="finalScore"></h1>
+        <h2><?php  echo "email:", $_SESSION['email'] ?></h2>
+
         <form>
-          <h2><?php  echo "User email:", $_SESSION['email'], "<br />" ?></h2>
           <button
             type="submit"
             class="btn"
             id="saveScoreBtn"
-            onclick="saveHighScore(event)"
-          >
+            onclick="saveHighScore(event)">
             Save
           </button>
         </form>
@@ -49,6 +49,35 @@ if(!isset($_SESSION['email'])){
         <a class="btn" href="/highscores.html">Check Highscore</a>
       </div>
     </div>
-    <script src="end.js"></script>
+    <script>
+const saveScoreBtn = document.getElementById('saveScoreBtn');
+const finalScore = document.getElementById('finalScore');
+const LatestScore = localStorage.getItem('LatestScore');
+const useremail='<?php echo $_SESSION['email'] ?>';
+const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+const indiscores = JSON.parse(localStorage.getItem('IndivividualScores')) || [];
+const MAX_HIGH_SCORES = 100;
+
+finalScore.innerText = LatestScore;
+
+
+saveHighScore = (e) => {
+    e.preventDefault();
+
+    const score = {
+        score: LatestScore,
+        email: useremail,
+    };
+    
+    highScores.push(score);
+    highScores.sort((a, b) => b.score - a.score);
+    highScores.splice(5);
+
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+
+    window.location.assign('/index.php');
+};
+
+    </script>
   </body>
 </html>
