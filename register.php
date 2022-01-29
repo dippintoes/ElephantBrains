@@ -161,7 +161,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <ul>
             <div class="item"><a href="index.php">Home</a></div>
             <div class="item"><a href="Category.html">Category</a></div>
-            <div class="item"><a>Search</a></div>
+			<div class="item"><a href="search.html">Search</a></div>
             <div class="item"><a href="contact.html">Contact us</a></div>
             <div class="item"><a href="about.html">About Us</a></div>            
             </ul>
@@ -220,65 +220,65 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	</div>
 
 	<footer>
-    <!-- Footer main -->
-    <section class="ft-main">
-      <div class="ft-main-item">
-        <h2 class="ft-title">Legal</h2>
-        <ul>
-          <li><a href="#">Terms of use</a></li>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Interest based ads</a></li>
-          <li><a href="#">Do not sell my info</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </div>
-      <div class="ft-main-item">
-        <h2 class="ft-title">Resources</h2>
-        <ul>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">eBooks</a></li>
-          <li><a href="#">Webinars</a></li>
-        </ul>
-      </div>
-      <div class="ft-main-item">
-        <h2 class="ft-title">Contact</h2>
-        <ul>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Sales</a></li>
-          <li><a href="#">Advertise</a></li>
-        </ul>
-      </div>
-      <div class="ft-main-item">
-        <h2 class="ft-title">Stay Updated</h2>
-        <p>Get free updates before others do!</p>
-        <form>
-          <input type="email" name="email" placeholder="Enter email address">
-          <input type="submit" value="Subscribe">
-        </form>
-      </div>
-    </section>
-  
-    <!-- Footer social -->
-    <section class="ft-social">
-      <ul class="ft-social-list">
-        <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-        <li><a href="#"><i class="fa fa-git-square"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-        <li><a href="#"><i class="fa fa-telegram"></i></a></li>
-        <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
-      </ul>
-    </section>
-  
-    <!-- Footer legal -->
-    <section class="ft-legal">
-      <ul class="ft-legal-list">
-        <li><a href="#">Terms &amp; Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li>&copy; 2021 by Elephant brains, Aurangabad</li>
-      </ul>
-    </section>
-  </footer>
+			<!-- Footer main -->
+			<section class="ft-main">
+			<div class="ft-main-item">
+				<h2 class="ft-title">Legal</h2>
+				<ul>
+				<li><a href="#">Terms of use</a></li>
+				<li><a href="#">Privacy policy</a></li>
+				<li><a href="#">Interest based ads</a></li>
+				<li><a href="#">Do not sell my info</a></li>
+				<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="ft-main-item">
+				<h2 class="ft-title">Resources</h2>
+				<ul>
+				<li><a href="#">Docs</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">eBooks</a></li>
+				<li><a href="#">Webinars</a></li>
+				</ul>
+			</div>
+			<div class="ft-main-item">
+				<h2 class="ft-title">Contact</h2>
+				<ul>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Sales</a></li>
+				<li><a href="#">Advertise</a></li>
+				</ul>
+			</div>
+			<div class="ft-main-item">
+				<h2 class="ft-title">Stay Updated</h2>
+				<p>Get free updates before others do!</p>
+				<form>
+				<input type="email" name="email" placeholder="Enter email address">
+				<input type="submit" value="Subscribe">
+				</form>
+			</div>
+			</section>
+		
+			<!-- Footer social -->
+			<section class="ft-social">
+			<ul class="ft-social-list">
+				<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+				<li><a href="#"><i class="fa fa-git-square"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+				<li><a href="#"><i class="fa fa-telegram"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+			</ul>
+			</section>
+		
+			<!-- Footer legal -->
+			<section class="ft-legal">
+			<ul class="ft-legal-list">
+				<li><a href="#">Terms &amp; Conditions</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li>&copy; 2021 by Elephant brains, Aurangabad</li>
+			</ul>
+			</section>
+	</footer>
 </body>
 </html>

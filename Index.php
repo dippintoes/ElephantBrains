@@ -72,7 +72,7 @@
                 <ul>
                 <div class="item"><a href="#home">Home</a></div>
                 <div class="item"><a href="Category.html">Category</a></div>
-                <div class="item"><a>Search</a></div>
+                <div class="item"><a href="search.html">Search</a></div>
                 <div class="item"><a href="contact.html">Contact us</a></div>
                 <div class="item"><a href="about.html">About Us</a></div> 
                 <?php  if (isset($_SESSION['email'])) : ?>
