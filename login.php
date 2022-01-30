@@ -22,7 +22,7 @@ $password = trim($_POST['password_1']);
                 $_SESSION['user_logged_in'] = true;
                 echo "<script>alert('Logged in successfully!!');</script>";
 
-            header('Location: https://elephantbrains.azurewebsites.net/index.php');
+            header('Location: index.php');
         }else{
             echo "<script>alert('Invalid email and password');</script>";
         }
@@ -126,6 +126,8 @@ $password = trim($_POST['password_1']);
                     </div>
                 </div>
             </form>
+            <p>Please click here, if not redirected to Homepage!!! <a id="login" href="index.php">Home</a></p>
+
         </div>
 
         <footer>
