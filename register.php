@@ -144,7 +144,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			
 			if($con->query($insertSQL)===TRUE){
 				$success_message = "Account created successfully.";
-				header('Location: https://elephantbrains.azurewebsites.net/login.php');
+				header('Location: login.php');
 			}
 			else{
 				echo "error creating database:".$con->error;
