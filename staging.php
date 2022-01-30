@@ -3,7 +3,7 @@
 session_start();
 
 if(!isset($_SESSION['email'])){
-    die(header("location: 404.php"));
+    die(header("location: https://elephantbrains.azurewebsites.net/404.php"));
 }
 ?>
 <!DOCTYPE html>

@@ -22,7 +22,7 @@ $password = trim($_POST['password_1']);
                 $_SESSION['user_logged_in'] = true;
                 echo "<script>alert('Logged in successfully!!');</script>";
 
-            header('Location: index.php');
+            header('Location: https://elephantbrains.azurewebsites.net/index.php');
         }else{
             echo "<script>alert('Invalid email and password');</script>";
         }

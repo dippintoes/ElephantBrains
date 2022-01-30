@@ -60,7 +60,7 @@ start=()=>{
 getNewQuestion=()=>{
     if(availableQuestions.length===0||questionCount>=MAX_QUESTIONS){
         localStorage.setItem('LatestScore',score);
-        return window.location.assign('/end.php');
+        return window.location.assign('https://elephantbrains.azurewebsites.net/end.php');
     }
     questionCount++;
     progressTxt.innerText=`Question ${questionCount}/${MAX_QUESTIONS}`;
