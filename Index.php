@@ -2,6 +2,8 @@
   session_start(); 
   if (isset($_GET['logout'])) {
   	session_destroy();
+    echo ("<script>sessionStorage.clear();
+    </script>");
   	unset($_SESSION['email']);
   	header("location: end.php");
   }
