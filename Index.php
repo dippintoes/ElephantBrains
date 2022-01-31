@@ -21,7 +21,32 @@
     <meta name="keywords" content="Elephant Brains, Trivia, Online gaming, Online trivia, Quiz generator, quiz API, Category search, animals quiz, bollywood quiz, academic quiz, sports quiz, website using html,css,js,php,mysql, " />
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-      
+    .bg {
+      margin-top:-10px;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+.bg > div {
+  color: white;
+  font-size:72;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  width: 100vw;
+  text-shadow: 0 -1px #222;
+}
+
+#home1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://media.istockphoto.com/vectors/question-mark-background-seamless-vector-id857045844?k=20&m=857045844&s=612x612&w=0&h=wwQas8nWZajKUloHu9MF4lF4NH3_zID8GdYaHU0DF9c=);
+}
+
 .dropdown {
   float: left;
   overflow: hidden;
@@ -38,7 +63,11 @@
   font-family: inherit;
   margin: 0;
 }
+.Heading{
+    color: whitesmoke;
+    background-color: rgb(39, 29, 61);
 
+text-align:center;}
 .dropdown:hover .dropbtn {
   background-color: red;
 }
@@ -101,6 +130,16 @@
             </div>
         </section>
 
+        
+
+        <section>
+          <div id="home1" class="bg">
+            <div>
+              <h1>Trivia</h1>
+              <span>An online trivia platform with basket filled by different categories with an ocean of new questions genarated using opentdb APIs.</span>
+            </div>
+          </div>
+        </section>
         <section class="Heading" id="home">
             <div class="nav1-items">
                 <div class="logo">
@@ -111,8 +150,6 @@
                 </div>
             </div>
         </section>
-
-        <section class="intro"></section>
         <section class="intro2"></section>
 
         <section class="categories" id="categories">
@@ -122,23 +159,23 @@
              <!--Slider-->
             <div id="slider">  
                 <div class="slide" style="background:dodgerBlue;">
-                <img src="https://previews.123rf.com/images/sumkinn/sumkinn1511/sumkinn151100036/47783764-quiz-background-the-concept-is-the-question-with-the-answer-vector-.jpg" height="450px" width="500px">
-                <h2 class="subheading"><a id="acad" href="staging.php">Academic</a></h2>
+                <a id="acad" href="staging.php"><img src="https://previews.123rf.com/images/sumkinn/sumkinn1511/sumkinn151100036/47783764-quiz-background-the-concept-is-the-question-with-the-answer-vector-.jpg" height="450px" width="500px">
+                <h2 class="subheading">Academic</a></h2>
                 </div>
                 
                 <div class="slide" style="background:coral;">
-                <img src="http://www.themanthanschool.co.in/blog/wp-content/uploads/2019/12/general-knowledge.jpg" height="450px" width="500px">
-                <h2 class="subheading"><a id="gk" href="staging.php">General Knowledge</a></h2>
+                <a id="gk" href="staging.php"><img src="http://www.themanthanschool.co.in/blog/wp-content/uploads/2019/12/general-knowledge.jpg" height="450px" width="500px">
+                <h2 class="subheading">General Knowledge</a></h2>
                 </div>
             
                 <div class="slide" style="background:crimson;">
-                <img src=" https://is1-ssl.mzstatic.com/image/thumb/Purple/v4/c7/41/e8/c741e80a-1cc1-377a-e3d6-e8063aa0d7b7/source/512x512bb.jpg" height="450px" width="500px">
-                <h2 class="subheading"><a id="bolly" href="staging.php">Bolly Quiz</a></h2>
+                <a id="bolly" href="staging.php"><img src=" https://is1-ssl.mzstatic.com/image/thumb/Purple/v4/c7/41/e8/c741e80a-1cc1-377a-e3d6-e8063aa0d7b7/source/512x512bb.jpg" height="450px" width="500px">
+                <h2 class="subheading">Bolly Quiz</a></h2>
                 </div>
                 
                 <div class="slide" style="background: #6edf10;">
-                <img src="https://1.bp.blogspot.com/-qKzqBlxDa8U/YG33phsPJxI/AAAAAAAAEAI/jauqXwwmLh8fPnmZkxbroGwwE76n5-m3wCLcBGAsYHQ/s1277/literature%2Bquiz.PNG"  height="450px" width="500px">
-                <h2 class="subheading"><a id="lit" href="staging.php">Literature Quiz</a></h2>
+                <a id="lit" href="staging.php"><img src="https://1.bp.blogspot.com/-qKzqBlxDa8U/YG33phsPJxI/AAAAAAAAEAI/jauqXwwmLh8fPnmZkxbroGwwE76n5-m3wCLcBGAsYHQ/s1277/literature%2Bquiz.PNG"  height="450px" width="500px">
+                <h2 class="subheading">Literature Quiz</a></h2>
                 </div>
                 
                 <!--Controlling arrows-->
@@ -153,6 +190,7 @@
                 
         </section>
 
+        
         <?php  if (!isset($_SESSION['email'])) : ?>
           <section class="registerhere">
             <form id="form1">
@@ -213,9 +251,9 @@
             <section class="ft-social">
               <ul class="ft-social-list">
                 <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
-                <li><a href="#"><i class="fa fa-git-square"></i></a></li>
+                <li><a href="https://github.com/dippintoes/ElephantBrains"><i class="fa fa-git-square"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rutuja-nandkumar-gosavi/"><i class="fa fa-linkedin-square"></i></a></li>
                 <li><a href="#"><i class="fa fa-telegram"></i></a></li>
                 <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
               </ul>

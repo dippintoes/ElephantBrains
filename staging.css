@@ -345,16 +345,16 @@ white-space: nowrap;
 }
 
 ::-webkit-scrollbar {
-width: 16px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
-background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 animation: gradient 15s ease infinite;
-border-radius: 100vw;
-margin-block: 10px;
+  border-radius: 100vw;
+  margin-block: 7px;
 }
 ::-webkit-scrollbar-thumb {
-background-color: rgb(107, 72, 202);
-border-radius: 100vw;
-border: solid 2px hsl(120 5% 0% /1);
+  background-color: rgb(107, 72, 202);
+  border-radius: 100vw;
+  border: solid 2px hsl(120 5% 0% /1);
 }

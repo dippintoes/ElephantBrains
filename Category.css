@@ -92,14 +92,14 @@ body{
     font-family: nyala;
     font-weight: bolder;
     color: #442b41;
-    background: rgba(255,255,255,.5);
+    background:yellowgreen;
 
 }
 .card1>h6{
     text-align: center;
     font-size: larger;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: darkslategray;
+    color: black;
 }
 .pos1:hover,
 .pos2:hover,
@@ -119,3 +119,17 @@ body{
     grid-template-columns: auto;
   }
 }
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	animation: gradient 15s ease infinite;
+    border-radius: 100vw;
+    margin-block: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(107, 72, 202);
+    border-radius: 100vw;
+    border: solid 2px hsl(120 5% 0% /1);
+  }
