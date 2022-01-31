@@ -6,7 +6,7 @@ highScoresList.innerHTML = highScores
   .map(score => {
     if(score.email===Loggedemail)
     {
-        return `<li class="high-score">${score.email} - ${score.score}</li>` 
+        return `<li class="high-score">${score.score}</li>` 
     }
   })
   .join("");
