@@ -253,7 +253,7 @@ ul {
   footer {
     background-color: #555;
     color: #bbb;
-    line-height: 1.5;
+    line-height: 2.0;
   }
   footer a {
     text-decoration: none;
@@ -274,6 +274,7 @@ ul {
   /* Footer main */
   .ft-main {
     padding: 1.25rem 1.875rem;
+    height: 50vh;
     display: flex;
     flex-wrap: wrap;
   }
