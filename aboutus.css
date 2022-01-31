@@ -159,6 +159,7 @@ margin-top: 40px;
 .culture-section {
   background-size: cover;
   color: #fff;
+  font-size: 2.35rem;
 }
 
  .substrate {
@@ -265,7 +266,7 @@ ul {
   .ft-title {
     color: #fff;
     font-family: "Merriweather", serif;
-    font-size: 1.375rem;
+    font-size: 3rem;
     padding-bottom: 0.625rem;
   }
   /* Sticks footer to bottom */
@@ -277,6 +278,7 @@ ul {
     height: 50vh;
     display: flex;
     flex-wrap: wrap;
+    height: 40vh;
   }
   @media only screen and (min-width: 29.8125rem /* 477px */) {
     .ft-main {
@@ -323,7 +325,7 @@ ul {
   }
   .ft-social-list li {
     margin: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 2.25rem;
   }
   /* Footer legal */
   .ft-legal {
@@ -342,4 +344,19 @@ ul {
   /* one before the last child */
   .ft-legal-list li:nth-last-child(2) {
       flex: 1;
+  }
+
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	animation: gradient 15s ease infinite;
+    border-radius: 100vw;
+    margin-block: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(107, 72, 202);
+    border-radius: 100vw;
+    border: solid 2px hsl(120 5% 0% /1);
   }

@@ -5,19 +5,27 @@ body{
 }
 .nav{
     background-color: rgb(16, 6, 39);
-    width: 100%;
+    width: 100vw;
     height: 7vh;
     position: sticky;
     z-index: 4;
   top: 0;
 }
-.nav-items,.nav1-items{
+.nav-items{
     display: flex;
     font-size: large;
     font-weight: 700;
     float:right ;
-    gap: 100px;
-    margin-bottom: 10px;
+    gap: 95px;
+    margin-bottom: -10px;
+
+}
+.nav1-items{
+  display: flex;
+  font-size: large;
+  font-weight: 700;
+  gap: 100px;
+  margin-left: 350px;
 }
 
 .item{
@@ -32,7 +40,6 @@ a{
 }
 a:hover{
     box-shadow:  3px 4px 5px #888888;
-    padding: 3px;
     border-radius: 7px;
     transition-delay: .17s;
     background-color: rgb(231, 218, 218);
@@ -43,15 +50,15 @@ a:hover{
     border-radius: 35px;
     padding-top:8px;
     margin-top: 70px;
-
 }
 .Heading{
-    background-color: rgb(39, 29, 61);
-    width: 100%;
+  background-color: rgb(39, 29, 61);
+    width: 100vw;
     height: 45vh;
+
 }
 .herohead{
-    float: right;
+    float: center;
 
 }
 .spreadingUnderline{
@@ -59,36 +66,33 @@ a:hover{
 	font-size:4em;
     margin-top: 95px;
     text-align: center;
-    margin-right: -120px;
-}
-.intro{
-    width: 100%;
-    height: 53vh;
-background-image: url("https://t3.ftcdn.net/jpg/02/55/75/42/360_F_255754298_C15z9FhsqbO7zgF5LCakV4A1ZLA6STUV.jpg");
-margin-top: -20px;
 }
 
+
 .intro2{
-    width: 100%;
-    height: 50vh;
+    width: 100vw;
+    height: 70vh;
 background-image: url("https://media.istockphoto.com/vectors/handwritten-typography-lettering-of-lets-go-isolated-on-white-vector-id1214291804?k=20&m=1214291804&s=612x612&w=0&h=GN18U0HhC3p2sOwbD_gld3ZUpkd4qsa2OKHodpxQRGY=");
 margin-top: -20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 
 #categories{
-    width: 100%;
-    padding-top: 10px;
-    height: 100%;
-background-color: rgba(240, 255, 255, 0.774);
+    width: 100vw;
+    padding-top: 80px;
+    height: 120vh;
+background-color:midnightblue;
 }
 .head{
-    font-size: 42px;
-    color: rgb(107, 72, 202);
+    font-size: 36px;
+    color: whitesmoke;
     text-align: center;
-    font-weight: 400;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 100px;
 }
 
 #slider{
