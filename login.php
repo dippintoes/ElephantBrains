@@ -126,7 +126,7 @@ $password = trim($_POST['password_1']);
                     </div>
                 </div>
             </form>
-            <p style="color:black">Please click here, if not redirected to Homepage!!! <a id="login" href="index.php" style="color:blue">Home</a></p>
+            <h3 style="color:black">Please click here, if not redirected to Homepage!!! <a id="login" href="index.php" style="color:blue">Home</a></h3>
 
         </div>
 
