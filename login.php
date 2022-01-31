@@ -40,25 +40,25 @@ $password = trim($_POST['password_1']);
         <style>/* Container */
 .container{
     width:80vw;
-    margin:100px;
+    margin:70px;
     height:70vh;
 }
-
 /* Login */
 #div_login{
-    border: 1px solid gray;
-    border-radius: 3px;
-    width: 470px;
-    height: 270px;
-    box-shadow: 0px 2px 2px 0px  gray;
-    margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #div_login h1{
     margin-top: 0px;
     font-weight: normal;
     padding: 10px;
-    background-color: cornflowerblue;
+    background-color: black;
     color: white;
     font-family: sans-serif;
 }
@@ -70,22 +70,34 @@ $password = trim($_POST['password_1']);
 }
 
 #div_login .textbox{
-    width: 96%;
-    padding: 7px;
+    
+    font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
 #div_login input[type=submit]{
-    padding: 7px;
-    width: 100px;
-    margin:30px;
-    background-color: black;
-    border: 0px;
-    margin-left:180px;
-    color: white;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(39, 29, 61);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
 }
 #div_login input[type=submit]:hover{
-    background-color:cornflowerblue;
-    color:black;
+  background: rgb(41, 35, 60);   font-size:larger;
 }
 
 /* media */

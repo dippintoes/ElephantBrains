@@ -16,7 +16,7 @@ body{
     font-size: large;
     font-weight: 700;
     float:right ;
-    gap: 100px;
+    gap: 95px;
     margin-bottom: -10px;
 
 }
@@ -85,7 +85,7 @@ margin-top: -20px;
     width: 100vw;
     padding-top: 80px;
     height: 120vh;
-background-color:#555;
+background-color:midnightblue;
 }
 .head{
     font-size: 36px;

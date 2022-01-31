@@ -50,7 +50,8 @@
 .dropdown {
   float: left;
   overflow: hidden;
-  margin-right:70px;
+  margin-right:100px;
+  margin-bottom:-40px;
 }
 
 .dropdown .dropbtn {
@@ -58,7 +59,6 @@
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -154,7 +154,7 @@ text-align:center;}
 
         <section class="categories" id="categories">
             <div class="head">
-                <h2>Most renowned</h2>
+                <h2>User's favourite</h2>
             </div>
              <!--Slider-->
             <div id="slider">  
@@ -204,9 +204,10 @@ text-align:center;}
                       <a id="btn" href="register.php">Register now</a>
                   </div>
               </div>
-          </form>
+            </form>
           </section>
         <?php endif ?> 
+
         <footer>
             <!-- Footer main -->
             <section class="ft-main">

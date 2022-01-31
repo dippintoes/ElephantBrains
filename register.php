@@ -28,12 +28,13 @@ a{
 }
 /* signup */
 #div_sign{
-    border: 1px solid gray;
-    border-radius: 3px;
-    width: 40vw;
-    height: 55vh;
-    box-shadow: 0px 2px 2px 0px  gray;
-    margin: 0 auto;
+    position: relative;
+  background: #FFFFFF;
+  max-width: 50vw;
+  margin: 0 auto 150px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #div_sign h1{
@@ -41,12 +42,25 @@ a{
     font-weight: normal;
     padding: 10px;
 	width:100%;
-    background-color: cornflowerblue;
+    background-color: black;
     color: white;
     font-family: sans-serif;
 }
 .form-group{
 	width:50%;
+}
+
+#div_sign .textbox{
+    
+font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 35px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 #div_sign div{
     margin-top: 10px;
@@ -59,16 +73,24 @@ a{
 }
 
 #div_sign input[type=submit]{
-	margin-left:150px;
-    width: 50%;
-    background-color: black;
-    border: 0px;
-	margin-bottom:100px;
-    color: white;
+	font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(39, 29, 61);
+  width: 50%;
+  border: 0;
+text-align:center;  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-top:80px;
+  margin-left:200px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-bottom:40px;
 }
 #div_sign input[type=submit]:hover{
-    background-color:cornflowerblue;
-    color:black;
+    background: rgb(41, 35, 60);   font-size:larger;
 }
 
 /* media */

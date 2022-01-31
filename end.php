@@ -45,9 +45,9 @@ if(!isset($_SESSION['email'])){
             Save
           </button>
         </form>
-        <a class="btn" href="/Test.html">Play Again</a>
-        <a class="btn" href="/">Go Home</a>
-        <a class="btn" href="/highscores.html">Check Highscore</a>
+        <a class="btn" href="Test.html">Play Again</a>
+        <a class="btn" href="index.php">Go Home</a>
+        <a class="btn" href="highscores.html">Check Highscore</a>
       </div>
     </div>
     <script>
@@ -74,8 +74,6 @@ saveHighScore = (e) => {
     highScores.sort((a, b) => b.score - a.score);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
-
-    window.location.assign('/index.php');
 };
 
     </script>
