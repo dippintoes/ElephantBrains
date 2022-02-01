@@ -51,16 +51,17 @@ if(!isset($_SESSION['email'])){
       </div>
     </div>
     <script>
+
 const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
 const LatestScore = localStorage.getItem('LatestScore');
 const useremail='<?php echo $_SESSION['email'] ?>';
 sessionStorage.setItem("email",useremail);
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-const indiscores = JSON.parse(localStorage.getItem('IndivividualScores')) || [];
-const MAX_HIGH_SCORES = 100;
-finalScore.innerText = LatestScore;
 
+const MAX_HIGH_SCORES = 5;
+
+finalScore.innerText = LatestScore;
 
 saveHighScore = (e) => {
     e.preventDefault();
@@ -69,12 +70,13 @@ saveHighScore = (e) => {
         score: LatestScore,
         email: useremail,
     };
-    
     highScores.push(score);
     highScores.sort((a, b) => b.score - a.score);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
+    window.location.assign('index.php');
 };
+
 
     </script>
   </body>
