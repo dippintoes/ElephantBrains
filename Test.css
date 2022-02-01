@@ -1,78 +1,97 @@
 body{
-    margin: 0;
-    padding:0;
-    color: cornsilk;
+  margin: 0;
+  padding:0;
+  color: cornsilk;
 }
 
 /* test window*/
 .testwindow{
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 80rem;
-  padding:20px;
-
+width: 90vw;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 80rem;
+font-size: 65%;
 }
-
-
 .container1{
-  margin-top: 100px;
-  margin-left: 150px;
-  align-self: center;
-  background-color: blanchedalmond;
-  width: 80vw;
-  height: 100%;
-  color: black;
-  box-shadow: 0 0.4rem 1.4rem 0 black;
-  margin-bottom: 100px;
+margin-top: 100px;
+margin-left: 150px;
+align-self: center;
+background-color: blanchedalmond;
+width: 80vw;
+height: 85vh;
+color: black;
+box-shadow: 0 0.4rem 1.4rem 0 black;
+margin-bottom: 100px;
 }
-.game{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 70%;
-  height: 80%;
-  margin-left: 50px;
+#game{
+  padding-left:20px;
+  padding-right:20px;
+
 }
-.hidden{
-  display: none;
-}
-#topbar{
+
+#hud {
   display: flex;
   justify-content: space-between;
+  padding-right:20px;
 }
 
-.topscore{
+.hud-prefix {
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
-.topscoreval{
+.hud-main-text {
+  font-size: 3rem;
   text-align: center;
 }
 
 #progressBar {
   width: 20rem;
-  height: 1.4rem;
+  height: 2rem;
   border: 0.3rem solid #56a5eb;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 #progressBarFull {
-  height: 1.4rem;
+  height: 2rem;
   background-color: #56a5eb;
   width: 0%;
 }
 
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+
 .choice-container {
   display: flex;
-  margin-bottom: 0.5rem;
-  width: 80%;
-  font-size: 1.0rem;
+  width: 90%;
+  font-size: 14px;
+  height: 60%;
   border: 0.1rem solid rgb(86, 165, 235, 0.25);
   background-color: white;
+  
 }
 
 .choice-container:hover {
@@ -83,7 +102,7 @@ body{
 }
 
 .choice-prefix {
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 0.5rem;
   background-color: #56a5eb;
   color: white;
 }
@@ -100,21 +119,22 @@ body{
 .incorrect {
   background-color: #dc3545;
 }
-  /* LOADER */
+
+/* LOADER */
 #loader {
-  border: 1.6rem solid white;
-  border-radius: 50%;
-  border-top: 1.6rem solid #56a5eb;
-  width: 12rem;
-  height: 12rem;
-  animation: spin 2s linear infinite;
+border: 1.6rem solid white;
+border-radius: 50%;
+border-top: 1.6rem solid #56a5eb;
+width: 9rem;
+height: 9rem;
+animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
 }

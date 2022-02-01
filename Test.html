@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="staging.css" ></link>
-    <link rel="stylesheet" type="text/css" href="Test.css" ></link>
-
-    <script type="text/javascript">
-            
-    </script>    
+    <link rel="stylesheet" type="text/css" href="Test.css" ></link> 
     <title>Quiz time</title>
 </head>
 <body>
@@ -25,17 +21,6 @@
     </div>
 </section>
 
-    <section class="Heading" id="home">
-        <div class="nav1-items">
-            <div class="logo">
-                <img alt="man thinking" src="https://mlufzvs0vlnj.i.optimole.com/W9J5v6g-wlY7Zu_L/w:auto/h:auto/q:75/https://debatechamber.com/wp-content/uploads/2017/02/bigstock-Question-Mark-114454214.jpg" width="140px" height="140px" class="logoimg">
-            </div>
-            <div class="herohead">
-                <h1 class="spreadingUnderline">Elephant Brains</h1>
-            </div>
-        </div>
-    </section>
-
     
     <section class="quiz">
           <h3 class="quiz-time">| Quiz time |</h3>
@@ -43,50 +28,46 @@
     </section>
 
     <section class="testwindow">
-        <div class="container1">
-            <div id="loader"></div>
-            <div id="game" class="game hidden">
-              <div id="topbar">
-                <div id="topitems">
-                  <p id="progressTxt" class="topprefix">Question</p>
-                  <div id="progressBar">
-                    <div id="progressBarFull"></div>
-                  </div>
-                </div>
-
-                <div id="topitems">
-                  <p class="topscore">Score</p>
-                  <h1 class="topscoreval" id="score">0</h1>
-                </div>
-              </div>
-
-              <h2 id="question"></h2>
-              <div class="choice-container">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">
-                </p>
-
-              </div>
-              <div class="choice-container">
-                <p class="choice-prefix">B</p>
-                <p class="choice-text" data-number="2">
-                </p>
-                
-              </div>
-              <div class="choice-container">
-                <p class="choice-prefix">C</p>
-                <p class="choice-text" data-number="3">
-                </p>
-                
-              </div>
-              <div class="choice-container">
-                <p class="choice-prefix">D</p>
-                <p class="choice-text" data-number="4">
-                </p>
-                
+      <div class="container1">
+        <div id="loader"></div>
+        <div id="game" class="justify-center flex-column hidden">
+          <div id="hud">
+            <div id="hud-item">
+              <p id="progressText" class="hud-prefix">
+                Question
+              </p>
+              <div id="progressBar">
+                <div id="progressBarFull"></div>
               </div>
             </div>
+            <div id="hud-item">
+              <p class="hud-prefix">
+                Score
+              </p>
+              <h1 class="hud-main-text" id="score">
+                0
+              </h1>
+            </div>
+          </div>
+          <h2 id="question"></h2>
+          <div class="choice-container">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text" data-number="1"></p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text" data-number="2"></p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">C</p>
+            <p class="choice-text" data-number="3"></p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">D</p>
+            <p class="choice-text" data-number="4"></p>
+          </div>
         </div>
+      </div>
     </section>
 
     

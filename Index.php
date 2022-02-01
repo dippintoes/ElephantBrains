@@ -268,7 +268,7 @@ text-align:center;}
                 <li>&copy; 2021 by Elephant brains, Aurangabad</li>
               </ul>
             </section>
-          </footer>
+        </footer>
 
 
         <script>

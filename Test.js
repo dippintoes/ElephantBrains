@@ -12,10 +12,8 @@ let questionCounter = 0;
 let availableQuesions = [];
 
 let questions = [];
-
-const category = sessionStorage.getItem('category');
 fetch(
-    'https://opentdb.com/api.php?amount=10&category=${category}'
+    'https://opentdb.com/api.php?amount=10&category=9'
 )
     .then((res) => {
         return res.json();

@@ -94,7 +94,7 @@ if(!isset($_SESSION['email'])){
                         <br><br><h2><b>Raise you bar high</b></h2>
                         <p>📢Make sure you have read the instructions just to make the process easier.<br> 📢You can see your highest score and analyze your performance whenever you want!!!<br/>📢 Keep challenging yourself!!<br/>📢Never too late to start<br></p>
                         <br>
-                        <p><a href="Test.html" class="btn btn--accent">Start</a></p>
+                        <p><a href="Test.html#game" class="btn btn--accent">Start</a></p>
                     </div>
                     <figure>
                         <img src="https://c.tenor.com/6IxwooIZL4gAAAAC/clock-ticking.gif" alt="Image description">
